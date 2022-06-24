@@ -1,20 +1,16 @@
 <template>
    <div class="md-body">
-    <h1>В этом приложении:</h1>
+    <h1>В этом приложении разработано:</h1>
     <ul>
-      <li>Полная настройка шаблона на Vue CLI</li>
-      <li>Установка и настройка Vue-router для Vue.js 3</li>
-      <li>Динамическая перерисовка без перезагрузки страницы</li>
-      <li>Динамичный навбар и ссылки</li>
-      <li>Обработка несуществующих роутов</li>
-      <li>Хеши и моды для роутера</li>
-      <li>Настройка общего конфига</li>
+      <li>Vue-Router в связке Vue.js 3</li>
+      <li>Динамические маршруты</li>
+      <li>Храниение и взаимодействие с данными из Seeders</li>
+      <li>Слайдер с персонажами</li>
     </ul>
     <p>
       Сделано на курсе
-      <a href="https://tocode.ru/courses/vuejs-3-s-nulya-do-rezultata/"
-        >Cделано на курсе "Vue.js 3 c нуля до результата"</a
-      >
+      <a style="color: #ffffff;" href="https://tocode.ru/courses/vuejs-3-s-nulya-do-rezultata/"
+        >Vue.js 3 С нуля до результата</a>
     </p>
   </div>
 </template>

@@ -1,9 +1,16 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper-person">
         <div v-if="item">
             <img :src="item.img" :alt="item.descr">
-            <h1 class="title">{{item.title}}</h1>
+            <h1 style="color:#fff;" class="title">{{item.title}}</h1>
             <p>{{item.descr}}</p>
+
+            <div class="card-stats">
+                <div v-for="(stat,index) in item.info" :key="index" class="one-third">
+                    <div class="stat-value">{{stat.value}}</div>
+                    <div class="stat">{{stat.title}}</div>
+                </div>
+            </div>
 
             <div>
                 <router-link class="btn btnPrimary" to="/">Back to home</router-link>
@@ -11,6 +18,18 @@
         </div>
     </div>
 </template>
+
+<style scoped>
+.wrapper-person{
+    text-align: center;
+}
+
+.card-stats{
+    border-radius: 14px;
+    background-color: transparent;
+    margin: 30px 0;
+}
+</style>
 
 <script>
 import items from '@/seeders/items.js'

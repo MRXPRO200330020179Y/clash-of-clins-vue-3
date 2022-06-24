@@ -6,7 +6,7 @@
         <span class="card-name">{{name}}</span>
         <span class="card-title">{{title}}</span>
         <div class="card-bady">
-           <slot>{{item.descr}}</slot>
+        <slot name="body"></slot>
         <router-link 
             v-if="link" 
             class="link" 
@@ -14,6 +14,7 @@
             style="display: block; margin-top: 16px; margin-bottom: 16px;">
             See more
         </router-link>
+        <slot name="footer"></slot>
         </div>
     </div>
 </template>
