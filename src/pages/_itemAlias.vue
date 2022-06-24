@@ -24,6 +24,12 @@
     text-align: center;
 }
 
+.btnPrimary{
+    background-color: #fff;
+    color: rgb(91 52 39);;
+    border: none;
+}
+
 .card-stats{
     border-radius: 14px;
     background-color: transparent;
