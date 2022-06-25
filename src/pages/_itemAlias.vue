@@ -16,6 +16,10 @@
                 <router-link class="btn btnPrimary" to="/">Back to home</router-link>
             </div>
         </div>
+
+        <div v-else>
+            <notFund></notFund>
+        </div>
     </div>
 </template>
 
@@ -38,12 +42,17 @@
 </style>
 
 <script>
-import items from '@/seeders/items.js'
+import items from '@/seeders/items.js';
+import notFund from '@/pages/notFund.vue';
 export default {
     data(){
         return{
             item:null
         }
+    },
+
+    components:{
+        notFund
     },
 
     created(){
